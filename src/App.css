@@ -1,0 +1,176 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  background-image: linear-gradient(to bottom right, rgb(62, 224, 224), #e976c0);
+
+}
+
+p {
+  font-size: 1.4rem;
+  margin: 0%;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width:800px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img{
+    display: inline-block;
+    object-fit: contain;
+    width: 100%;
+}
+
+.title {
+  font-size: 4.4rem;
+  text-align: center;
+  letter-spacing: .5rem;
+}
+
+.form {
+  padding: 4rem 0;
+  display: grid;
+}
+
+.label {
+  font-size: 1.4rem;
+  margin-bottom: .6rem;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.button:hover {
+  background-color: rgba(0,0,0,0.90);
+}
+
+/* can do max-width for everything of the screen size and under
+the below is for everything at screen size and over
+auto makes label and button take up only as much space as they need
+1fr makes the search bar take up the rest of the available space 1 is 100 of the fr(action)*/
+@media (min-width:786px){
+  .form {
+      grid-template-columns: auto 1fr auto;
+      grid-gap: 1rem;
+      align-items: center;
+  }
+  
+  .input {
+      margin-bottom: 0;
+  }
+}
+
+.card-list {
+  margin-top: 4rem;
+}
+
+.card {
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+  margin-bottom: 2rem;
+  background-color: white;
+  
+}
+
+.card-title {
+  margin: 0.7rem;
+  font-size: 3.2rem;
+
+}
+
+.card-content {
+    display: flex;
+}
+
+.card-info {
+    flex: 1;
+    padding: 0;
+}
+
+
+.card-image {
+  display: inline-block;
+  object-fit: contain;
+  width: min-content;
+  margin-left: 1rem;
+}
+
+.test {
+    margin-bottom: 1rem;
+}
+
+.passed {
+    display: inline;
+    font-weight: bold;
+    font-size: 20px;
+    color: green;
+}
+
+.failed {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+/*
+  background-color: rgb(244,244,244);
+
+.card-list {
+  margin-top: 4rem;
+}
+
+.card {
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+  margin-bottom: 2rem;
+  background-color: white;
+  
+}
+
+.card--title {
+  margin: 0.7rem;
+  font-size: 3.2rem;
+
+}
+
+.card--image {
+  margin: 0 auto;
+  display: block
+}
+*/
