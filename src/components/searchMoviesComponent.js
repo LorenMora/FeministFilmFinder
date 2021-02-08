@@ -11,7 +11,7 @@ export default function SearchMovies() {
 
     const searchMoviesBechdel = async () => {
 
-        const url = `http://bechdeltest.com/api/v1/getMoviesByTitle?title=${query}`;
+        const url = `https://cors-proxy.htmldriven.com/?url=http://bechdeltest.com/api/v1/getMoviesByTitle?title=${query}`;
 
         try {
             const res = await fetch(url);
