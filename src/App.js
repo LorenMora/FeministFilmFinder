@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="container">
           <h1 className="title">FEMINIST FILM FINDER</h1>
-          <img className='img' src='images/comic895x389.jpg' alt='' />
+          <img className='img' src='images/comic.jpg' alt='comic strip explaining the bechdel test' />
           <SearchMovies />
       </div>
     );
