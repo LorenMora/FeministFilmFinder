@@ -14,7 +14,11 @@ export default function SearchMovies() {
         const url = `http://bechdeltest.com/api/v1/getMoviesByTitle?title=${query}`;
 
         try {
-            const res = await fetch(url);
+            const res = await fetch(url, {
+                headers: {
+                    'Access-Control-Allow-Origin' : 'no-cors'
+                }
+            });
             const data  = await res.json();
             console.log(data);
             setMoviesBechdel(data);
