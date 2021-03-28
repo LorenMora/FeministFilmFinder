@@ -35,6 +35,7 @@ small {
 .img{
     display: inline-block;
     object-fit: contain;
+    background-color: #e976c0;
     width: 100%;
 }
 
@@ -78,10 +79,7 @@ small {
   background-color: rgba(0,0,0,0.90);
 }
 
-/* can do max-width for everything of the screen size and under
-the below is for everything at screen size and over
-auto makes label and button take up only as much space as they need
-1fr makes the search bar take up the rest of the available space 1 is 100 of the fr(action)*/
+
 @media (min-width:786px){
   .form {
       grid-template-columns: auto 1fr auto;
@@ -130,6 +128,21 @@ auto makes label and button take up only as much space as they need
   margin-left: 1rem;
 }
 
+@media screen and (max-width: 800px) {
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-image{
+        margin-bottom: 4em;
+        order: -1;
+    }
+    .card-title{
+        font-size: 2.5rem;
+    }
+}
+
 .test {
     margin-bottom: 1rem;
 }
@@ -147,30 +160,25 @@ auto makes label and button take up only as much space as they need
     font-size: 20px;
 
 }
-/*
-  background-color: rgb(244,244,244);
 
-.card-list {
-  margin-top: 4rem;
+@media screen and (max-width: 350px) {
+    .form{
+        width: 100%;
+    }
+    .input{
+        width: 100%;
+    }
 }
 
-.card {
-  padding: 2rem 4rem;
-  border-radius: 10px;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
-  margin-bottom: 2rem;
-  background-color: white;
-  
+@media screen and (max-width: 450px) {
+    html,
+    body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    } 
 }
 
-.card--title {
-  margin: 0.7rem;
-  font-size: 3.2rem;
-
-}
-
-.card--image {
-  margin: 0 auto;
-  display: block
-}
-*/
