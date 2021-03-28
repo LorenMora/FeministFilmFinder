@@ -13,7 +13,7 @@ The Bechdel Test is a simple test which checks a movie for the following three c
 ## Overview
 Features of this site include: 
 * A movie search engine that returns whether a given movie passes the Bechdel test, indicating whether it is woman inclusive.
-* Utilizes CORS Anywhere API for cross-origin requests.
+* Created CORS proxy for cross-origin requests.
 * Consumes and integrates data from two different APIs 
 
 ## Project snapshot
