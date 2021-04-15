@@ -36,7 +36,7 @@ export default function BechdelContainer({title, rating}) {
 
     return !!movieDb?
             <div className="card" >
-            <h3 className="card-title">{movieDb.title}</h3>
+            <h3 className="card-title" tabIndex={0}>{movieDb.title}</h3>
             <div className="card-content">
                 <div className='card-info'>
                     <div className='test'>
