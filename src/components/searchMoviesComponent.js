@@ -16,7 +16,6 @@ export default function SearchMovies() {
         try {
             const res = await fetch(url);
             const data  = await res.json();
-            console.log(data);
             setMoviesBechdel(data);
         }catch(err){
             console.error(err);
@@ -29,20 +28,18 @@ export default function SearchMovies() {
     };
 
     return (
-        <>
+        <main>
             <form className='form' onSubmit={searchMovies}>
                 <label htmlFor='query' className='label'>Movie</label>
                 <input className='input' type='text' placeholder='i.e. Mary Poppins' name='query' 
                 value={query} onChange={(e) => setQuery(e.target.value)} />
                 <button className='button' type='submit'>Submit</button>
             </form>
-            <div className="card-list">
+            <section className="card-list">
                 {moviesBechdel.map(movie =>
                    <BechdelContainer title={movie.title} rating={movie.rating} key={movie.id} />
                 )}
-            </div>
-            <div className="card-list">
-            </div>
-        </>
+            </section>
+        </main>
     )
 };

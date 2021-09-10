@@ -13,7 +13,6 @@ export default function BechdelContainer({title, rating}) {
         try {
             const res = await fetch(urlTwo);
             const data  = await res.json();
-            console.log(data.results[0]);           
             setMovieDb(data.results[0]);
         }catch(err){
             console.error(err);
@@ -35,8 +34,8 @@ export default function BechdelContainer({title, rating}) {
     }, [title]);      
 
     return !!movieDb?
-            <div className="card" >
-            <h3 className="card-title" tabIndex={0}>{movieDb.title}</h3>
+            <article className="card" >
+            <h2 className="card-title" tabIndex={0}>{movieDb.title}</h2>
             <div className="card-content">
                 <div className='card-info'>
                     <div className='test'>
@@ -54,6 +53,6 @@ export default function BechdelContainer({title, rating}) {
                 />
             </div>
             <p><small>Bechdel Rating: {rating}</small></p>
-        </div> :
+        </article> :
         null
 };
