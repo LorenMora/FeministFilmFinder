@@ -9,10 +9,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: black;
-  background-image: linear-gradient(to bottom right, rgb(62, 224, 224), #e976c0);
-
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(62, 224, 224),
+    #e976c0
+  );
 }
 
 p {
@@ -26,23 +29,23 @@ small {
 
 .container {
   margin: 0 auto;
-  max-width:800px;
+  max-width: 800px;
   padding: 40px;
   display: flex;
   flex-direction: column;
 }
 
-.img{
-    display: inline-block;
-    object-fit: contain;
-    background-color: #e976c0;
-    width: 100%;
+.img {
+  display: inline-block;
+  object-fit: contain;
+  background-color: #e976c0;
+  width: 100%;
 }
 
 .title {
   font-size: 4.4rem;
   text-align: center;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
 }
 
 .form {
@@ -52,7 +55,7 @@ small {
 
 .label {
   font-size: 1.4rem;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
   text-transform: uppercase;
 }
 
@@ -66,7 +69,7 @@ small {
 }
 
 .button {
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -76,19 +79,18 @@ small {
 }
 
 .button:hover {
-  background-color: rgba(0,0,0,0.90);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-
-@media (min-width:786px){
+@media (min-width: 786px) {
   .form {
-      grid-template-columns: auto 1fr auto;
-      grid-gap: 1rem;
-      align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
   }
-  
+
   .input {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -99,27 +101,24 @@ small {
 .card {
   padding: 2rem 4rem;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   margin-bottom: 2rem;
   background-color: white;
-  
 }
 
 .card-title {
   margin: 0.7rem;
   font-size: 3.2rem;
-
 }
 
 .card-content {
-    display: flex;
+  display: flex;
 }
 
 .card-info {
-    flex: 1;
-    padding: 0;
+  flex: 1;
+  padding: 0;
 }
-
 
 .card-image {
   display: inline-block;
@@ -129,56 +128,53 @@ small {
 }
 
 @media screen and (max-width: 800px) {
-    .card-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .card-image{
-        margin-bottom: 4em;
-        order: -1;
-    }
-    .card-title{
-        font-size: 2.5rem;
-    }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-image {
+    margin-bottom: 4em;
+    order: -1;
+  }
+  .card-title {
+    font-size: 2.5rem;
+  }
 }
 
 .test {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .passed {
-    display: inline;
-    font-weight: bold;
-    font-size: 20px;
-    color: green;
+  display: inline;
+  font-weight: bold;
+  font-size: 20px;
+  color: green;
 }
 
 .failed {
-    color: red;
-    font-weight: bold;
-    font-size: 20px;
-
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 350px) {
-    .form{
-        width: 100%;
-    }
-    .input{
-        width: 100%;
-    }
+  .form {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
-    html,
-    body
-    {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden; 
-    } 
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
 }
-
