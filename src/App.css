@@ -35,8 +35,7 @@ small {
   flex-direction: column;
 }
 
-.img,
-.loader {
+.img {
   display: inline-block;
   object-fit: contain;
   background-color: #e976c0;
