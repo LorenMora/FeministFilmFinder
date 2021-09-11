@@ -33,6 +33,7 @@ small {
   padding: 40px;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .img {
