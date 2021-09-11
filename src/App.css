@@ -180,5 +180,6 @@ small {
 }
 .loader {
   margin: auto;
+  display: block;
   width: 150px;
 }
