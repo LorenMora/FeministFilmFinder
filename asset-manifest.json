@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FeministFilmFinder/static/css/main.db6fa8a0.chunk.css",
+    "main.css": "/FeministFilmFinder/static/css/main.62b20052.chunk.css",
     "main.js": "/FeministFilmFinder/static/js/main.39aecbbf.chunk.js",
     "main.js.map": "/FeministFilmFinder/static/js/main.39aecbbf.chunk.js.map",
     "runtime-main.js": "/FeministFilmFinder/static/js/runtime-main.1b9e4e97.js",
@@ -8,13 +8,13 @@
     "static/js/2.09231b7d.chunk.js": "/FeministFilmFinder/static/js/2.09231b7d.chunk.js",
     "static/js/2.09231b7d.chunk.js.map": "/FeministFilmFinder/static/js/2.09231b7d.chunk.js.map",
     "index.html": "/FeministFilmFinder/index.html",
-    "static/css/main.db6fa8a0.chunk.css.map": "/FeministFilmFinder/static/css/main.db6fa8a0.chunk.css.map",
+    "static/css/main.62b20052.chunk.css.map": "/FeministFilmFinder/static/css/main.62b20052.chunk.css.map",
     "static/js/2.09231b7d.chunk.js.LICENSE.txt": "/FeministFilmFinder/static/js/2.09231b7d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1b9e4e97.js",
     "static/js/2.09231b7d.chunk.js",
-    "static/css/main.db6fa8a0.chunk.css",
+    "static/css/main.62b20052.chunk.css",
     "static/js/main.39aecbbf.chunk.js"
   ]
 }
