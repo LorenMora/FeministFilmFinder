@@ -178,7 +178,7 @@ small {
     overflow-x: hidden;
   }
 }
-.loading {
+.loader {
   margin: auto;
   width: 150px;
 }
